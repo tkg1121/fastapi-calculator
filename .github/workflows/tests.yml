@@ -1,0 +1,24 @@
+name: Calculator tests
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Unit tests
+        run: python -m pytest tests/unit -v
+      - name: Integration tests
+        run: python -m pytest tests/integration -v
+      - name: Playwright end-to-end tests
+        run: python -m pytest tests/e2e -v --browser chromium
