@@ -3,6 +3,15 @@
 My IS 601 Module 8 calculator. It provides a browser interface and four JSON API
 endpoints, with unit, integration, and Playwright end-to-end tests.
 
+## Submission
+
+- [Successful GitHub Actions run](https://github.com/tkg1121/fastapi-calculator/actions/runs/40552794843)
+- [Application running in the browser](docs/Application%20Running.jpg)
+- [Successful workflow screenshot](docs/GitHub%20Actions.jpg)
+
+The suite contains 24 unit tests, 87 integration tests, and 16 Playwright
+end-to-end tests. All 127 tests passed locally and in GitHub Actions.
+
 ## Source
 
 This project builds on the instructor's
