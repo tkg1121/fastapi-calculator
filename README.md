@@ -7,7 +7,7 @@ endpoints, with unit, integration, and Playwright end-to-end tests.
 
 - [Submission PDF with links and screenshots](docs/Module%208%20Submission.pdf)
 - [Successful GitHub Actions run](https://github.com/tkg1121/fastapi-calculator/actions/runs/40552794843)
-- [Application running in the browser](docs/Application%20Running.jpg)
+- [Application running in the browser](docs/Application%20Running.png)
 - [Successful workflow screenshot](docs/GitHub%20Actions.jpg)
 
 The suite contains 24 unit tests, 87 integration tests, and 16 Playwright
